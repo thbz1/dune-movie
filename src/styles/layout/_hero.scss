@@ -10,7 +10,6 @@
 
     @media (max-width: 900px) {
         @include mx.flex-center();
-        min-height: 80dvh;
     }
 
     &__background {
@@ -26,11 +25,11 @@
 
         @media (max-width: 900px) {
             left: 0;
-            min-height: 80dvh;
+            min-height: 85dvh;
             background:
-                linear-gradient(to top, rgba(vars.$color-dark, 0.95) 40%,
-                    rgba(vars.$color-dark, 0.7) 60%,
-                    rgba(vars.$color-dark, 0.4) 70%,
+                linear-gradient(to top, rgba(vars.$color-dark, 0.92) 40%,
+                    rgba(vars.$color-dark, 0.7) 50%,
+                    rgba(vars.$color-dark, 0.4) 60%,
                     rgba(vars.$color-dark, 0) 100%),
                 url('../images/duna-hero.jpg') no-repeat center / cover;
         }
@@ -43,7 +42,7 @@
         width: 50%;
 
         @media (max-width: 900px) {
-            top: 100px;
+            top: 200px;
             width: 90%;
         }
 
