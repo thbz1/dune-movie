@@ -12,7 +12,7 @@ Este é um projeto **educacional** desenvolvido com o objetivo de praticar conce
 - JavaScript vanilla (tabs, accordion)
 - Responsive Web Design
 - Integração de vídeo via YouTube embed
-- Publicado via <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>
+- Publicado via Vercel
 
 ---
 
@@ -34,10 +34,10 @@ As imagens utilizadas na hero section, background, cards de personagens e demais
 
 Fontes utilizadas:
 
-- <a href="https://fanart.tv" target="_blank" rel="noopener noreferrer">fanart.tv</a>
-- <a href="https://wallpapercg.com" target="_blank" rel="noopener noreferrer">wallpapercg.com</a>
-- <a href="https://wallpapersafari.com" target="_blank" rel="noopener noreferrer">wallpapersafari.com</a>
-- <a href="https://film-grab.com" target="_blank" rel="noopener noreferrer">film-grab.com</a>
+- [fanart.tv](https://fanart.tv)
+- [wallpapercg.com](https://wallpapercg.com)
+- [wallpapersafari.com](https://wallpapersafari.com)
+- [film-grab.com](https://film-grab.com)
 
 As imagens foram usadas sem modificação comercial, respeitando os termos de uso ou _fair use_ educacional.
 
@@ -47,11 +47,11 @@ As imagens foram usadas sem modificação comercial, respeitando os termos de us
 
 O vídeo do trailer de “Duna: Parte Dois” foi **incorporado diretamente via iframe** do canal oficial da Warner Bros. Pictures Brasil no YouTube:
 
-🔗 <a href="https://www.youtube.com/watch?v=QqmbrvluQRA" target="_blank" rel="noopener noreferrer">Trailer Oficial – YouTube</a>
+🔗 [Trailer Oficial – YouTube](https://www.youtube.com/watch?v=QqmbrvluQRA)
 
 ---
 
-🔗 Acesse o projeto em: **<a href="https://duna-landing.vercel.app" target="_blank" rel="noopener noreferrer">https://duna-landing.vercel.app</a>**
+🔗 Acesse o projeto em: **[https://duna-landing.vercel.app](https://duna-landing.vercel.app)**
 
 ---
 
