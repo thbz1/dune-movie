@@ -4,7 +4,8 @@
 
 .overview {
     @include mx.flex-center();
-    min-height: 95dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
 
     &__grid {
         display: grid;
