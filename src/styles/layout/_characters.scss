@@ -5,7 +5,6 @@
 .characters {
     @include mx.flex-center();
     min-height: 100vh;
-    min-height: 100dvh;
 
     &__container {
         @include mx.container(1400px, 4);

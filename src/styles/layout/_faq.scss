@@ -5,7 +5,6 @@
 .faq {
     @include mx.flex-center($direction:column);
     min-height: 60vh;
-    min-height: 60dvh;
     padding-block: fn.spacing(4);
     background-color: rgba(vars.$color-dark, 0.4);
 

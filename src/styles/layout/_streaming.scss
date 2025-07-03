@@ -6,7 +6,6 @@
     @include mx.flex-center(flex-start);
     position: relative;
     min-height: 80vh;
-    min-height: 80dvh;
     background-color: vars.$color-dark;
 
     @media (max-width: 900px) {
@@ -19,7 +18,6 @@
         right: 0;
         width: 100vw;
         min-height: 80vh;
-        min-height: 80dvh;
         background:
             linear-gradient(to left, rgba(vars.$color-primary, 0.1), rgba(vars.$color-dark, 0.4) 70%),
             url('../images/duna-streaming.jpg') no-repeat right center / contain;
