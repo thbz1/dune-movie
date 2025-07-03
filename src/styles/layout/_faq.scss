@@ -1,0 +1,126 @@
+@use '../abstracts/functions' as fn;
+@use '../abstracts/mixins' as mx;
+@use '../abstracts/variables' as vars;
+
+.faq {
+    @include mx.flex-center($direction:column);
+    min-height: 60dvh;
+    padding-block: fn.spacing(4);
+    background-color: rgba(vars.$color-dark, 0.4);
+
+    @media (min-width: 500px) and (max-width: 670px) {
+        padding-inline: fn.spacing(2.5);
+    }
+
+    @media (min-width: 671px) and (max-width: 1250px) {
+        padding-inline: fn.spacing(3.5);
+    }
+
+    &__text {
+        @include mx.container(1000px, 2);
+        padding-bottom: fn.spacing(1.5);
+        border-bottom: 1px solid vars.$color-bg-secondary;
+        text-align: center;
+
+        @media (max-width:900px) {
+            width: 90%;
+            padding-inline: fn.spacing();
+        }
+    }
+
+    &__title {
+        margin-bottom: fn.spacing(1.5);
+        font-size: clamp(1.2rem, 3vw, 2rem);
+        font-weight: 500;
+    }
+
+    &__subtitle {
+        color: vars.$color-text-secondary;
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
+}
+
+.accordion {
+    @include mx.container(1200px);
+    padding: fn.spacing(2);
+
+    &__item {
+        background-color: rgba(vars.$color-bg-secondary, 0.5);
+        border: 1px solid rgba(vars.$color-light, 0.125);
+        border-radius: 6px 6px 0 0;
+        @include mx.box-shadow();
+
+        &:not(:last-child) {
+            margin-bottom: fn.spacing(0.5);
+        }
+    }
+
+    &__trigger {
+        position: relative;
+        width: 100%;
+        padding: fn.spacing();
+        background-color: transparent;
+        color: vars.$color-text-base;
+        border: none;
+        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        font-weight: bold;
+        text-align: left;
+        transition: .3s ease;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: 24px;
+            content: '\f107';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            transform: translateY(-50%);
+            transition: transform .3s ease-in-out;
+
+            @media (max-width: 400px) {
+                right: 14px;
+            }
+        }
+
+        &:hover,
+        &[aria-expanded="true"] {
+            background-color: vars.$color-primary;
+            color: vars.$color-dark;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        &[aria-expanded="true"] {
+            &::after {
+                content: '\f068';
+            }
+        }
+    }
+
+    &__content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s ease;
+
+        &.is-open {
+            max-height: 500px;
+        }
+    }
+
+    &__body {
+        padding: fn.spacing();
+        background-color: rgba(vars.$color-text-secondary, 0.1);
+        border-top: 1px solid vars.$color-secondary;
+
+        @media (min-width: 1200px) {
+            padding: 1rem 8rem;
+        }
+
+        p {
+            margin-top: fn.spacing(0.5);
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+}

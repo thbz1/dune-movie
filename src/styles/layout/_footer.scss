@@ -1,0 +1,38 @@
+@use '../abstracts/functions' as fn;
+@use '../abstracts/mixins' as mx;
+@use '../abstracts/variables' as vars;
+
+.footer {
+    padding: fn.spacing(4) fn.spacing(2);
+    background-color: vars.$color-bg-secondary;
+    color: vars.$color-text-secondary;
+    font-size: clamp(0.75rem, 1.6vw, 0.9rem);
+
+    &__container {
+        @include mx.flex-center($direction:column);
+        gap: fn.spacing(1.5);
+        @include mx.container(1200px, 0);
+        text-align: center;
+    }
+
+    &__logo {
+        width: 100px;
+        margin: 0 auto fn.spacing();
+        filter: brightness(0) invert(1); // Clareia a logo
+    }
+
+    a {
+        color: vars.$color-light;
+        text-decoration: underline;
+        transition: color .3s ease;
+
+        &:hover {
+            color: vars.$color-text-secondary;
+        }
+    }
+
+    .text--small {
+        line-height: 1.4;
+        opacity: 0.9;
+    }
+}

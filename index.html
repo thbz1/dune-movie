@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duna: Parte 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="dist/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="96x96" href="dist/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="dist/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+    <header class="header header--hidden">
+        <nav class="header__container">
+            <a href="/">
+                <img class="header__logo" src="./dist/images/duna-logo.png" alt="Logo de Duna">
+            </a>
+            <ul class="header__nav">
+                <li>
+                    <a href="#streaming" class="button">Assista agora</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero__background"></div>
+        <div class="hero__text">
+            <img src="dist/images/dune-pt2-logo.png" alt="Logo de Dune: Part Two">
+            <h1 class="visually-hidden">Duna: Parte Dois - O Filme</h1>
+            <div class="hero__impact">
+                <p class="hero__impact-line hero__impact-line--offset1">A profecia se revela</p>
+                <p class="hero__impact-line hero__impact-line--offset2">A guerra se aproxima</p>
+                <p class="hero__impact-line hero__impact-line--offset3">O escolhido se ergue</p>
+            </div>
+            <div class="hero__button">
+                <a href="#overview" class="button button--inset">Veja detalhes</a>
+                <a href="#streaming" class="button button--inset">Assista agora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="overview">
+        <div class="overview__grid">
+            <div class="overview__content">
+                <p>
+                    Enquanto o deserto de Arrakis sussurra nomes esquecidos pelo tempo,
+                    um novo ecoa como um presságio.
+                </p>
+                <p>
+                    Entre visões, alianças e sacrifícios, uma presença cresce:
+                    não apenas um líder, mas o reflexo de um destino que ultrapassa a vontade de qualquer homem.
+                </p>
+                <p>
+                    E com ele, a promessa de mudança... ou ruína.
+                </p>
+            </div>
+            <div class="overview__media">
+                <iframe src="https://www.youtube.com/embed/QqmbrvluQRA?si=7_5NSgqiCLw7psvX" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax">
+        <div class="parallax__img"></div>
+    </section>
+
+    <section class="characters">
+        <div class="characters__container">
+            <ul class="characters__tabs">
+                <li class="characters__tab-item">
+                    <a class="characters__tab-link characters__tab-link--active" data-tab="atreides">Atreides</a>
+                </li>
+                <li class="characters__tab-item">
+                    <a class="characters__tab-link" data-tab="fremen">Fremen</a>
+                </li>
+                <li class="characters__tab-item">
+                    <a class="characters__tab-link" data-tab="harkonnen">Harkonnen</a>
+                </li>
+                <li class="characters__tab-item">
+                    <a class="characters__tab-link" data-tab="empire">Império</a>
+                </li>
+            </ul>
+
+            <div class="characters__tab-content">
+
+                <div class="characters__panel characters__panel--active" id="atreides">
+                    <div class="characters__row">
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/paul-atreides.jpg" class="characters__img"
+                                        alt="Paul Atreides" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Paul Atreides</h4>
+                                    <p class="characters__text">Herdeiro do trono e líder messiânico, guiado por visões
+                                        e pela busca de justiça em Arrakis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/lady-jessica.jpg" class="characters__img"
+                                        alt="Lady Jessica" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Lady Jessica</h4>
+                                    <p class="characters__text">Mãe de Paul e membro da Bene Gesserit, une devoção
+                                        familiar a dons místicos e influência política</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/gurney-halleck.jpg" class="characters__img"
+                                        alt="Gurney Halleck" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Gurney Halleck</h4>
+                                    <p class="characters__text">Veterano de guerra leal aos Atreides, combina bravura no
+                                        campo de batalha com o coração de um poeta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="characters__panel" id="fremen">
+                    <div class="characters__row characters__row--2">
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/chani.jpg" class="characters__img" alt="Chani" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Chani</h4>
+                                    <p class="characters__text">Fremen destemida e parceira de Paul, une força, lealdade
+                                        e conexão profunda com a terra e seu povo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/stilgar.jpg" class="characters__img" alt="Stilgar" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Stilgar</h4>
+                                    <p class="characters__text">Líder sábio dos Fremen, guerreiro respeitado que
+                                        equilibra tradição e estratégia para proteger Arrakis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="characters__panel" id="harkonnen">
+                    <div class="characters__row">
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/vladimir-harkonnen.jpg" class="characters__img"
+                                        alt="Vladimir Harkonnen" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Vladimir Harkonnen</h4>
+                                    <p class="characters__text">Barão implacável e cruel, comanda seu império pelo medo
+                                        e pela manipulação, sempre sedento por poder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/feyd-rautha.jpg" class="characters__img"
+                                        alt="Feyd-Rautha" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Feyd-Rautha</h4>
+                                    <p class="characters__text">Sobrinho do Barão, tão mortal quanto encantador,
+                                        treinado para assumir o trono com astúcia e violência</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/glossu-rabban.jpg" class="characters__img"
+                                        alt="Glossu Rabban" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Glossu Rabban</h4>
+                                    <p class="characters__text">Conhecido como "A Besta", é o braço brutal dos
+                                        Harkonnen, governando Arrakis com punho de ferro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="characters__panel" id="empire">
+                    <div class="characters__row characters__row--2">
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/shaddam-corrino.jpg" class="characters__img"
+                                        alt="Shaddam Corrino IV" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Shaddam Corrino IV</h4>
+                                    <p class="characters__text">Imperador do universo, mestre das intrigas
+                                        políticas, cuja autoridade é ameaçada pelas mudanças em Arrakis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="characters__col">
+                            <div class="characters__card">
+                                <div class="characters__img-wrapper">
+                                    <img src="../dist/images/irulan-corrino.jpg" class="characters__img"
+                                        alt="Irulan Corrino" />
+                                </div>
+                                <div class="characters__card-body">
+                                    <h4 class="characters__title">Irulan Corrino</h4>
+                                    <p class="characters__text">Filha do Imperador, inteligente e ambiciosa, dividida
+                                        entre o dever dinástico e desejos de poder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq__text">
+            <h2 class="faq__title">Perguntas que ressoam pelas dunas…</h2>
+            <p class="faq__subtitle">
+                Agora que você conheceu os personagens, explore as dúvidas mais comuns sobre Duna: Parte Dois.
+            </p>
+        </div>
+        <div class="accordion" data-accordion>
+            <div class="accordion__item">
+                <h2 class="accordion__header">
+                    <button class="accordion__trigger" aria-expanded="false">
+                        O filme é baseado em um livro?
+                    </button>
+                </h2>
+                <div class="accordion__content">
+                    <div class="accordion__body">
+                        <p>
+                            Sim. Duna: Parte 2 adapta a segunda metade do livro Duna (1965), escrito por Frank Herbert,
+                            considerado um dos maiores clássicos da ficção científica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <h2 class="accordion__header">
+                    <button class="accordion__trigger" aria-expanded="false">
+                        Preciso assistir ao primeiro filme?
+                    </button>
+                </h2>
+                <div class="accordion__content">
+                    <div class="accordion__body">
+                        <p>
+                            Sim, é altamente recomendável assistir à primeira parte, já que Duna: Parte 2 continua
+                            exatamente de onde o filme anterior parou.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <h2 class="accordion__header">
+                    <button class="accordion__trigger" aria-expanded="false">
+                        Onde se passa a história de Duna?
+                    </button>
+                </h2>
+                <div class="accordion__content">
+                    <div class="accordion__body">
+                        <p>Em um futuro distante, no planeta desértico Arrakis — único lugar do
+                            universo onde existe uma substância rara chamada "especiaria", que todos disputam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <h2 class="accordion__header">
+                    <button class="accordion__trigger" aria-expanded="false">
+                        Onde o filme foi gravado?
+                    </button>
+                </h2>
+                <div class="accordion__content">
+                    <div class="accordion__body">
+                        <p>
+                            As filmagens aconteceram em locais como Jordânia, Emirados Árabes Unidos, Itália e Hungria,
+                            para capturar os desertos e paisagens únicas de Arrakis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <h2 class="accordion__header">
+                    <button class="accordion__trigger" aria-expanded="false">
+                        Quantos filmes de Duna existem?
+                    </button>
+                </h2>
+                <div class="accordion__content">
+                    <div class="accordion__body">
+                        <p>
+                            A nova adaptação tem duas partes até agora (Duna de 2021 e Duna: Parte 2 de 2024), e uma
+                            terceira parte está em desenvolvimento. Também houve adaptações anteriores em 1984 e
+                            minisséries nos anos 2000.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="streaming" class="streaming">
+        <div class="streaming__background"></div>
+        <div class="streaming__content">
+            <h2 class="streaming__title">Onde Assistir</h2>
+            <a class="streaming__logo" href="https://www.max.com/br/pt" target="_blank" rel="noopener noreferrer">
+                <img src="dist/images/hbo-max.png" alt="Logo da HBO Max">
+            </a>
+            <p class="streaming__text">
+                Duna: Parte Dois já está disponível nas plataformas de streaming. Mergulhe no deserto e descubra o
+                legado de Paul Atreides.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/duna-logo.png" alt="Duna: Parte Dois">
+
+            <p class="footer__disclaimer text--small">
+                Este site foi criado exclusivamente para fins educacionais como parte de um curso de programação.
+                Todo o conteúdo, incluindo textos, imagens e descrições, é fictício e utilizado sob diretrizes de uso
+                justo ou licença livre, sem qualquer associação comercial ou institucional com as marcas, empresas ou
+                produtos reais
+                mencionados.
+            </p>
+
+            <p class="footer__video-disclaimer text--small">
+                O trailer oficial de <strong>Duna: Parte Dois</strong> foi incorporado diretamente do canal oficial da
+                <a href="https://www.youtube.com/@WarnerBrosPicturesBR" target="_blank" rel="noopener noreferrer">Warner
+                    Bros. Pictures Brasil</a>
+                no YouTube.
+            </p>
+
+            <p class="footer__streaming-disclaimer text--small">
+                A marca HBO Max e sua logo são propriedade da Warner Bros. Discovery. O uso neste projeto é meramente
+                ilustrativo e não representa qualquer afiliação ou parceria.
+            </p>
+
+            <p class="footer__credits text--small">
+                As imagens utilizadas neste projeto foram obtidas de fontes públicas ou com diretrizes de uso livre:
+                <a href="https://fanart.tv" target="_blank" rel="noopener noreferrer">Fanart.tv</a>,
+                <a href="https://wallpapercg.com" target="_blank" rel="noopener noreferrer">Wallpapercg</a>,
+                <a href="https://wallpapersafari.com" target="_blank" rel="noopener noreferrer">Wallpapersafari</a> e
+                <a href="https://film-grab.com" target="_blank" rel="noopener noreferrer">Film-grab.com</a>.
+                Todos os direitos pertencem aos respectivos autores e detentores.
+            </p>
+
+            <p class="footer__author text--small">
+                Desenvolvido por <a href="https://github.com/thbz1" target="_blank" rel="noopener noreferrer">Thiago
+                    Osório</a>.
+            </p>
+
+            <p class="footer__copyright text--small">
+                &copy; 2025 Projeto acadêmico. Nenhum conteúdo deste site está à venda ou em comercialização.
+            </p>
+        </div>
+    </footer>
+
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

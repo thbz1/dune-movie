@@ -1,0 +1,4 @@
+// Função para espaçamento consistente
+@function spacing($multiplier: 1) {
+    @return $multiplier * 1rem;
+}

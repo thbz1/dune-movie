@@ -1,0 +1,36 @@
+@use 'functions' as fn;
+
+// Centraliza com flex; aceita direction opcional
+@mixin flex-center($justify: center, $align: center, $direction: null) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+
+    @if $direction {
+        flex-direction: $direction;
+    }
+}
+
+// Define limites de largura máxima responsiva
+@mixin container($max-width: 1200px, $padding-x: 2) {
+    width: 100%;
+    max-width: $max-width;
+    margin-inline: auto;
+    padding-inline: fn.spacing($padding-x);
+}
+
+// Aplica uma sombra padrão
+@mixin box-shadow($size: 5px) {
+    box-shadow: 0 0 $size rgba(212, 175, 55, 0.4);
+}
+
+// Oculta conteúdo visualmente, mas acessível a leitores de tela
+@mixin visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
