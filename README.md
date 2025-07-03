@@ -50,7 +50,7 @@ O vídeo do trailer de “Duna: Parte Dois” foi **incorporado diretamente via 
 
 ---
 
-🔗 Acesse o projeto em: **[https://duna-landing.vercel.app](https://duna-landing.vercel.app)**
+🔗 Acesse o projeto em: **[https://dune-movie.vercel.app/](https://dune-movie.vercel.app/)**
 
 ---
 
