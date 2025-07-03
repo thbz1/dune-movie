@@ -28,9 +28,15 @@ function favicons() {
         .pipe(gulp.dest('dist/'));
 }
 
-exports.default = gulp.parallel(styles, images, scripts, favicons);
+function html() {
+    return gulp.src('index.html')
+        .pipe(gulp.dest('dist'));
+}
+
+exports.default = gulp.parallel(styles, images, scripts, favicons, html);
 
 exports.watch = function () {
     gulp.watch('./src/styles/**/*.scss', gulp.parallel(styles))
     gulp.watch('./src/scripts/*.js', gulp.parallel(scripts))
+    gulp.watch('./index.html', gulp.parallel(html))
 }
