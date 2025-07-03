@@ -12,7 +12,6 @@ Este é um projeto **educacional** desenvolvido com o objetivo de praticar conce
 - JavaScript vanilla (tabs, accordion)
 - Responsive Web Design
 - Integração de vídeo via YouTube embed
-- Publicado via Vercel
 
 ---
 
